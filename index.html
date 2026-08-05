@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="CXG 的个人网站：全栈开发、数字产品与实验性项目。"
+    />
+    <meta name="theme-color" content="#120b07" />
+    <title>CXG - Independent Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="CXG 首页">
+        <span class="brand-mark">C</span>
+        <span>CXG / 26</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="主导航">
+        <a href="#home" data-nav="home">首页</a>
+        <a href="#work" data-nav="work">项目</a>
+        <a href="#about" data-nav="about">关于</a>
+        <a href="#contact" data-nav="contact">联系</a>
+      </nav>
+
+      <a class="header-cta" href="#contact">
+        <span class="status-dot" aria-hidden="true"></span>
+        可接受新项目
+      </a>
+
+      <button class="menu-button" type="button" aria-label="打开菜单" aria-expanded="false" data-menu-button>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="mobile-menu" data-mobile-menu>
+        <a href="#home">首页 <span>01</span></a>
+        <a href="#work">项目 <span>02</span></a>
+        <a href="#about">关于 <span>03</span></a>
+        <a href="#contact">联系 <span>04</span></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home" data-section="home">
+        <img
+          class="hero-image"
+          src="assets/hero-portrait.jpg"
+          alt="橙色光影中的创意人物"
+          fetchpriority="high"
+          data-hero-image
+        />
+        <div class="hero-shade" aria-hidden="true"></div>
+
+        <div class="hero-grid">
+          <div class="hero-copy reveal is-visible">
+            <p class="eyebrow"><span>PROFILE / 001</span> 独立开发者</p>
+            <h1>CXG</h1>
+            <p class="hero-role">构建清晰、可靠、<br />有生命力的数字产品。</p>
+            <p class="hero-intro">
+              从想法、界面到可运行的系统，把复杂技术组织成自然好用的体验。
+            </p>
+            <div class="hero-actions">
+              <a class="action action-primary" href="#work">查看项目 <span aria-hidden="true">↓</span></a>
+              <a class="action action-ghost" href="#contact">开始合作 <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+
+          <aside class="hero-specs reveal is-visible" aria-label="个人能力参数">
+            <div class="specs-heading">
+              <span>CAPABILITY INDEX</span>
+              <span class="live-time" data-time>--:-- CST</span>
+            </div>
+            <dl>
+              <div><dt>Focus</dt><dd>Product + Engineering</dd></div>
+              <div><dt>Stack</dt><dd>TS / Node / Edge</dd></div>
+              <div><dt>Mode</dt><dd>Remote / Async</dd></div>
+              <div><dt>Base</dt><dd>China · UTC+8</dd></div>
+            </dl>
+          </aside>
+
+          <button class="featured-project reveal is-visible" type="button" data-project="relay">
+            <img src="assets/project-code.jpg" alt="Relay 项目的代码界面" />
+            <span class="featured-copy">
+              <span class="micro-label">FEATURED / 02</span>
+              <strong>Relay</strong>
+              <span>让本地服务安全抵达公网。</span>
+            </span>
+            <span class="featured-arrow" aria-hidden="true">↗</span>
+          </button>
+
+          <div class="hero-tags reveal is-visible" aria-label="技术标签">
+            <span>TypeScript</span>
+            <span>Full-stack</span>
+            <span>Systems</span>
+          </div>
+
+          <a class="scroll-cue" href="#work">
+            <span>SCROLL</span>
+            <i aria-hidden="true"></i>
+          </a>
+        </div>
+      </section>
+
+      <div class="ticker" aria-label="能力关键词">
+        <div class="ticker-track">
+          <span>PRODUCT THINKING</span><i>✦</i>
+          <span>FULL-STACK SYSTEMS</span><i>✦</i>
+          <span>INTERACTION DESIGN</span><i>✦</i>
+          <span>OPEN SOURCE</span><i>✦</i>
+          <span>PRODUCT THINKING</span><i>✦</i>
+          <span>FULL-STACK SYSTEMS</span><i>✦</i>
+          <span>INTERACTION DESIGN</span><i>✦</i>
+          <span>OPEN SOURCE</span><i>✦</i>
+        </div>
+      </div>
+
+      <section class="work section-light" id="work" data-section="work">
+        <div class="section-shell">
+          <header class="section-heading reveal">
+            <div>
+              <p class="eyebrow"><span>SELECTED WORK</span> 2024—2026</p>
+              <h2>做少而重要的事。</h2>
+            </div>
+            <p>三个持续演进的实验，覆盖知识、连接与实时数据。</p>
+          </header>
+
+          <div class="project-list">
+            <article class="project-row reveal" data-project-row="atlas">
+              <div class="project-index">01</div>
+              <div class="project-visual visual-atlas" aria-hidden="true">
+                <div class="atlas-window">
+                  <span class="atlas-dot"></span>
+                  <strong>ATLAS / TODAY</strong>
+                  <div class="atlas-line long"></div>
+                  <div class="atlas-line"></div>
+                  <div class="atlas-line short"></div>
+                  <div class="atlas-pulse"></div>
+                </div>
+              </div>
+              <div class="project-info">
+                <p class="micro-label">KNOWLEDGE SYSTEM / 2026</p>
+                <h3>Atlas</h3>
+                <p>让碎片信息沉淀为可检索、可关联、可再次行动的个人知识系统。</p>
+                <ul><li>React</li><li>Node.js</li><li>SQLite</li></ul>
+              </div>
+              <button class="project-open" type="button" data-project="atlas" aria-label="查看 Atlas 项目">↗</button>
+            </article>
+
+            <article class="project-row reveal" data-project-row="relay">
+              <div class="project-index">02</div>
+              <div class="project-visual">
+                <img src="assets/project-code.jpg" alt="带有橙色光线的代码界面" loading="lazy" />
+              </div>
+              <div class="project-info">
+                <p class="micro-label">NETWORK TOOL / 2025</p>
+                <h3>Relay</h3>
+                <p>一套面向个人服务的轻量入口，处理反向代理、证书、健康检查与部署。</p>
+                <ul><li>Caddy</li><li>Docker</li><li>WebSocket</li></ul>
+              </div>
+              <button class="project-open" type="button" data-project="relay" aria-label="查看 Relay 项目">↗</button>
+            </article>
+
+            <article class="project-row reveal" data-project-row="pulse">
+              <div class="project-index">03</div>
+              <div class="project-visual">
+                <img src="assets/project-architecture.jpg" alt="带有橙色结构线条的现代建筑" loading="lazy" />
+              </div>
+              <div class="project-info">
+                <p class="micro-label">LIVE DATA / 2024</p>
+                <h3>Pulse</h3>
+                <p>将分散的运行数据压缩成一眼可读的状态，让异常更早被看见。</p>
+                <ul><li>TypeScript</li><li>Edge API</li><li>Streaming</li></ul>
+              </div>
+              <button class="project-open" type="button" data-project="pulse" aria-label="查看 Pulse 项目">↗</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section-dark" id="about" data-section="about">
+        <div class="section-shell">
+          <header class="about-statement reveal">
+            <p class="eyebrow"><span>ABOUT / CXG</span> 构建者，而非旁观者</p>
+            <h2>
+              我相信好的数字产品，<br />应该让复杂性<span>退到幕后。</span>
+            </h2>
+          </header>
+
+          <div class="about-grid">
+            <div class="about-copy reveal">
+              <p>
+                我关注产品与工程交叉的区域：既思考用户为什么需要它，也把每一个接口、状态和部署路径落实到可运行的系统。
+              </p>
+              <p>
+                工作方式偏向快速原型、短反馈循环和清晰交付。能独立完成从信息架构、交互界面到服务端与上线维护的完整链路。
+              </p>
+            </div>
+
+            <div class="capability-list reveal">
+              <div><span>01</span><strong>产品与原型</strong><em>Strategy / UX / Prototype</em></div>
+              <div><span>02</span><strong>前端体验</strong><em>Web / Motion / Accessibility</em></div>
+              <div><span>03</span><strong>后端系统</strong><em>API / Data / Automation</em></div>
+              <div><span>04</span><strong>部署与运维</strong><em>Linux / Docker / Observability</em></div>
+            </div>
+          </div>
+
+          <div class="metrics reveal" aria-label="工作指标">
+            <div><strong>08+</strong><span>年持续构建</span></div>
+            <div><strong>30+</strong><span>项目落地</span></div>
+            <div><strong>4</strong><span>核心能力域</span></div>
+            <div><strong>UTC+8</strong><span>远程协作</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="process section-light" aria-labelledby="process-title">
+        <div class="section-shell process-grid">
+          <header class="section-heading reveal">
+            <div>
+              <p class="eyebrow"><span>WORKING MODE</span> FROM 0 TO 1</p>
+              <h2 id="process-title">把模糊变成确定。</h2>
+            </div>
+          </header>
+
+          <ol class="process-list">
+            <li class="reveal">
+              <span>01</span>
+              <div><strong>对齐问题</strong><p>先确认真正要改变的结果，而不是急着堆功能。</p></div>
+              <em>DISCOVER</em>
+            </li>
+            <li class="reveal">
+              <span>02</span>
+              <div><strong>快速成形</strong><p>用可交互原型收敛结构、内容与关键路径。</p></div>
+              <em>SHAPE</em>
+            </li>
+            <li class="reveal">
+              <span>03</span>
+              <div><strong>稳定交付</strong><p>把体验、性能、安全与部署一起纳入实现。</p></div>
+              <em>BUILD</em>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" data-section="contact">
+        <div class="contact-grid">
+          <div class="contact-copy reveal">
+            <p class="eyebrow"><span>OPEN CHANNEL</span> 下一件值得做的事</p>
+            <h2>一起把想法<br />做成现实。</h2>
+          </div>
+
+          <div class="contact-action reveal">
+            <p>产品原型、个人工具、内部系统，或任何值得被认真构建的数字体验。</p>
+            <a href="mailto:hello@cxg.bot.cd">hello@cxg.bot.cd <span aria-hidden="true">↗</span></a>
+            <button type="button" data-copy-email>复制邮箱</button>
+            <span class="copy-status" role="status" data-copy-status></span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="#home"><span class="brand-mark">C</span><span>CXG / 26</span></a>
+      <p>独立开发者 · 数字产品构建者</p>
+      <div><span>© 2026 CXG</span><a href="#home">返回顶部 ↑</a></div>
+    </footer>
+
+    <dialog class="project-dialog" data-project-dialog>
+      <button class="dialog-close" type="button" aria-label="关闭项目详情" data-dialog-close>×</button>
+      <div class="dialog-meta">
+        <span data-dialog-index>01 / PROJECT</span>
+        <span data-dialog-year>2026</span>
+      </div>
+      <h2 data-dialog-title>Atlas</h2>
+      <p class="dialog-lead" data-dialog-lead></p>
+      <div class="dialog-details">
+        <div><span>角色</span><strong data-dialog-role></strong></div>
+        <div><span>范围</span><strong data-dialog-scope></strong></div>
+        <div><span>状态</span><strong data-dialog-status></strong></div>
+      </div>
+      <p class="dialog-body" data-dialog-body></p>
+      <a href="#contact" data-dialog-contact>讨论类似项目 <span aria-hidden="true">↗</span></a>
+    </dialog>
+  </body>
+</html>
